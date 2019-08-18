@@ -9,13 +9,9 @@
 #include <Adafruit_Sensor.h>
 #include <Adafruit_BME280.h>
 
-// needed by BME280 library, not automatically included during PlatformIO build process :(
-#include <Wire.h>
-#include <SPI.h>
-
-#include "wifi_local.h"
-#include "mqtt.h"
-#include "bme280.h"
+#include "multiball/wifi.h"
+#include "multiball/mqtt.h"
+#include "multiball/bme280.h"
 
 #include "config.h"
 
