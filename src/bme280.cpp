@@ -15,8 +15,6 @@
 
 #include "config.h"
 
-#ifdef HAS_BME280
-
 static Adafruit_BME280 bme280;
 static bool is_present = false;
 
@@ -43,4 +41,3 @@ float bme280_current_humidity() {
 float bme280_current_pressure() {
   return bme280.readPressure();
 }
-#endif
